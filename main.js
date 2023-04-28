@@ -33,7 +33,7 @@ fetch(URL, {
         header.appendChild(imageURL);
         imageURL.classList.add("profileImage")
     
-    let name = document.createElement("p");
+    let name = document.createElement("h3");
         name.innerText = `${attributes.name}`;
         header.appendChild(name);
         name.classList.add("header")

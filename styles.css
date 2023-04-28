@@ -57,7 +57,7 @@ a {
     justify-content: space-evenly;
     flex-direction: column;
     padding:30px 5%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-size: 20px;
     margin-bottom: -40px;
 }
