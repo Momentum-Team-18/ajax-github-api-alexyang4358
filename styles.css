@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+body {
+    background-color: rgb(136, 32, 32);
+}
+
+a {
+    font-family: 'Montserrat', 'sans-serif';
+    color: rgb(131, 208, 213);
+}
 
 #header {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
+    color:beige;
     display: flex;
     justify-content: space-around;
     align-items:center;
@@ -17,50 +27,37 @@
     height: 200px;
 }
 
-#subHeader {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-    padding: 30px 5%;
-    font-size: 15px;
-    flex-direction: column;
-    /* align-items: flex-start; */
-    line-height: 1px;
-    border: 1px;
-    border-color:black;
-    border-style: solid;
+#subHeader{
+    font-family: 'Montserrat', 'sans-serif';
+    color: beige;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 200px;
+    grid-template-rows: minmax(auto, 2px) repeat(2,30px);
+    justify-items: center;
+    align-items: center;
 }
 
 #repoContainer {
-    /* display: grid;
+    display: grid;
     justify-content: center;
-    align-content: center; */
-    /* min-height: 300px; */
-    /* grid-template-rows: minmax(100px, auto) repeat(3,50px); */
-    padding: 3%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 370px;
+    grid-template-rows: repeat(10,30px);
+    justify-items: center;
+    align-content: center;
     font-size: 15px;
-    border: 1px;
-    border-color:black;
-    border-style: solid;
+    border-top:rgb(131, 208, 213);
 }
 
 #repoTitle {
-    /* grid-column: span 3; */
-    /* background-color: rgb(33, 67, 56); */
-    color: rgb(33, 67, 56);
+    color: beige;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
-    border: 2px solid white;
     flex-direction: column;
-    padding: 3%;
-    /* border-radius: 10px; */
+    padding:30px 5%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    /* margin: 100px; */
-    border: 1px;
-    border-color:black;
-    border-style: solid;
+    margin-bottom: -40px;
 }

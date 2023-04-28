@@ -41,17 +41,19 @@ fetch(URL, {
     let location = document.createElement("p");
         location.innerText = `Location: ${attributes.location}`;
         subHeader.appendChild(location);
-        location.classList.add("subHeader")
+        location.classList.add("subHeader");
 
     let login = document.createElement("p");
         login.innerText = `GitHub username: ${attributes.login}`;
         subHeader.appendChild(login);
         login.classList.add("subHeader");
 
-    let webURL = document.createElement("p");
-        webURL.innerText = `GitHub URL: ${attributes.html_url}`;
+    let webURL = document.createElement("a");
+        webURL.innerText = attributes.login;
+        webURL.href = `${attributes.html_url}`
         subHeader.appendChild(webURL);
         webURL.classList.add("subHeader");
+    
 
     // let repoURL = document.createElement("a");
     //     repoURL.innerText = `${attributes.repos_url}`;
@@ -81,6 +83,7 @@ fetch(rURL, {
     console.log(repos.html_url);
         let reposEl = document.createElement("a");
         reposEl.href = repos.html_url;
+        reposEl.innerText = repos.name;
         repoContainer.appendChild(reposEl);
     }
 });
